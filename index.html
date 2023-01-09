@@ -14,6 +14,7 @@
     <title>home • lepremieraxel's portfolio</title>
   </head>
   <body id="home">
+    <div class="scrollbar"></div>
     <header>
       <div class="plus-social">
         <span></span>
@@ -100,18 +101,18 @@
         <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
       </span>
       <p>for a message, a question or a job, send me a message and i will answer it.</p>
-      <form action="">
+      <form action="/src/php/send-mail.php" method="post">
         <fieldset>
           <legend>&nbsp;name&nbsp;</legend>
-          <input type="text" name="name" id="name" placeholder="write your name">
+          <input type="text" name="name" id="name" placeholder="write your name" required>
         </fieldset>
         <fieldset>
           <legend>&nbsp;email&nbsp;</legend>
-          <input type="email" name="email" id="email" placeholder="write your email">
+          <input type="email" name="email" id="email" placeholder="write your email" required>
         </fieldset>
         <fieldset>
           <legend>&nbsp;message&nbsp;</legend>
-          <textarea name="message" id="message" placeholder="write your message"></textarea>
+          <textarea name="message" id="message" placeholder="write your message" required></textarea>
         <button type="submit">send</button>
       </fieldset>
       </form>
@@ -125,5 +126,6 @@
     <script src="/src/js/burger.js"></script>
     <script src="/src/js/fixed-navbar.js"></script>
     <script src="/src/js/resize-textarea.js"></script>
+    <script src="/src/js/scrollbar.js"></script>
   </body>
 </html>

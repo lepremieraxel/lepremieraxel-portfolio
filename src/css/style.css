@@ -11,6 +11,10 @@
   background-color: var(--primary);
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
 :root{
   --dark: #1a1a1a;
   --clear: #f2f2f2;
@@ -47,6 +51,16 @@ body{
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+/* scrollbar */
+.scrollbar{
+  height: 7px;
+  background: linear-gradient(to left, var(--primary), var(--secondary));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
 }
 
 /* header */
@@ -329,6 +343,12 @@ section p{
   text-decoration: none;
   color: var(--clear);
   font-size: 4rem;
+}
+#contact .social-links a:hover{
+  color: var(--primary);
+}
+#contact p{
+  text-align: center;
 }
 #contact form{
   display: flex;

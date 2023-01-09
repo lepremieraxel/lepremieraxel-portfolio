@@ -3,6 +3,7 @@ const plusBtn = navbar.children[0];
 const mainLogo = navbar.children[3].children[0];
 const burgerBtn = navbar.children[4];
 
+
 const headerBg = document.querySelector('.header-bg');
 
 window.addEventListener('scroll', () => {
