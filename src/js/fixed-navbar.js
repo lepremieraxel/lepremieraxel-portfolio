@@ -1,7 +1,7 @@
 const navbar = document.querySelector('header');
 const plusBtn = navbar.children[0];
-const mainLogo = navbar.children[1].children[0];
-const burgerBtn = navbar.children[2];
+const mainLogo = navbar.children[3].children[0];
+const burgerBtn = navbar.children[4];
 
 const headerBg = document.querySelector('.header-bg');
 

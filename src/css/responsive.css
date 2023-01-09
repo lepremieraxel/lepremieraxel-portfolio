@@ -1,0 +1,45 @@
+@media screen and (min-width:1000px) {
+  body{
+    padding: 0 100px;
+  }
+  header{
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  .burger{
+    display: none;
+  }
+  .burger-container{
+    transform: translateX(0) !important;
+    z-index: 100 !important;
+    opacity: 1 !important;
+    backdrop-filter: none;
+    background-color: transparent;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: 0;
+  }
+  .burger-container a{
+    font-size: 1.5rem;
+  }
+  .plus-social{
+    display: none !important;
+  }
+  #about .cta-line{
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  footer{
+    width: calc(100% + 200px);
+  }
+}
+@media screen and (min-width:1250px) {
+  body{
+    padding: 0 250px;
+  }
+  footer{
+    width: calc(100% + 500px);
+  }
+}

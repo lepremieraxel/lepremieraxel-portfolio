@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <!-- META -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- LINK -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/responsive.css" />
+    <!-- ICONS -->
     <script src="https://kit.fontawesome.com/e0b8ba43a6.js" crossorigin="anonymous"></script>
     <!-- TITLE -->
     <title>home • lepremieraxel's portfolio</title>
@@ -16,6 +18,21 @@
       <div class="plus-social">
         <span></span>
         <span></span>
+      </div>
+      <nav class="burger-container inactive">
+        <a href="#home">@home</a>
+        <a href="#about">@about</a>
+        <a href="#portfolio">@portfolio</a>
+        <a href="#contact">@contact</a>
+      </nav>
+      <div class="plus-social-container inactive">
+        <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>
+        <a href="#contact"><i class="fa-regular fa-message"></i> contact me</a>
+        <span class="plus-social-icons">
+          <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
+        </span>
       </div>
       <a href="/" class="main-logo"
         ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.7 99.95">
@@ -32,21 +49,6 @@
       </div>
     </header>
     <div class="header-bg"></div>
-    <div class="plus-social-container inactive">
-      <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>
-      <a href="#contact"><i class="fa-regular fa-message"></i> contact me</a>
-      <span class="plus-social-icons">
-        <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
-      </span>
-    </div>
-    <nav class="burger-container inactive">
-      <a href="#home">@home</a>
-      <a href="#about">@about</a>
-      <a href="#portfolio">@portfolio</a>
-      <a href="#contact">@contact</a>
-    </nav>
     <main class="hero">
       <div class="main-title">
         <h1>lepremieraxel</h1>
@@ -118,6 +120,7 @@
       <p>&copy; lepremieraxel • axel marcial • 2023</p>
       <p>designed and developed by lepremieraxel</p>
     </footer>
+    <!-- SCRIPT JS -->
     <script src="/src/js/plus-social.js"></script>
     <script src="/src/js/burger.js"></script>
     <script src="/src/js/fixed-navbar.js"></script>
