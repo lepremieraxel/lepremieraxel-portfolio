@@ -94,48 +94,54 @@
   </section>
   <section id="contact">
     <h3>@contact</h3>
-    <span class="social-links">
-      <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
-    </span>
-    <p>for a message, a question or a job, send me a message and i will answer it.</p>
-    <form action="/src/php/send-mail.php" method="post">
-      <?php
-      if (isset($_GET['send'])) {
-        $send = htmlspecialchars($_GET['send']);
-        switch ($send) {
-          case 'true':
-      ?>
-            <div class="form-alert form-success">
-              <p>sent successfully!</p>
-            </div>
+    <div class="section-line">
+      <span class="social-links">
+        <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
+      </span>
+      <span>
+        <p>for a message, a question or a job, send me a message and i will answer it.</p>
+        <form action="/src/php/send-mail.php" method="post">
           <?php
-            break;
-          case 'false':
+          if (isset($_GET['send'])) {
+            $send = htmlspecialchars($_GET['send']);
+            switch ($send) {
+              case 'true':
           ?>
-            <div class="form-alert form-error">
-              <p>an error has occured. retry.</p>
-            </div>
-      <?php
-            break;
-        }
-      }
-      ?>
-      <fieldset>
-        <legend>&nbsp;name&nbsp;</legend>
-        <input type="text" name="name" id="name" placeholder="write your name" required>
-      </fieldset>
-      <fieldset>
-        <legend>&nbsp;email&nbsp;</legend>
-        <input type="email" name="email" id="email" placeholder="write your email" required>
-      </fieldset>
-      <fieldset>
-        <legend>&nbsp;message&nbsp;</legend>
-        <textarea name="message" id="message" placeholder="write your message" required></textarea>
-        <button type="submit">send</button>
-      </fieldset>
-    </form>
+                <div class="form-alert form-success">
+                  <p>sent successfully!</p>
+                </div>
+              <?php
+                break;
+              case 'false':
+              ?>
+                <div class="form-alert form-error">
+                  <p>an error has occured. retry.</p>
+                </div>
+          <?php
+                break;
+            }
+          }
+          ?>
+          <span>
+            <fieldset>
+              <legend>&nbsp;name&nbsp;</legend>
+              <input type="text" name="name" id="name" placeholder="write your name" required>
+            </fieldset>
+            <fieldset>
+              <legend>&nbsp;email&nbsp;</legend>
+              <input type="email" name="email" id="email" placeholder="write your email" required>
+            </fieldset>
+          </span>
+          <fieldset>
+            <legend>&nbsp;message&nbsp;</legend>
+            <textarea name="message" id="message" placeholder="write your message" required></textarea>
+            <button type="submit">send</button>
+          </fieldset>
+        </form>
+      </span>
+    </div>
   </section>
   <footer>
     <p>&copy; lepremieraxel • axel marcial • 2023</p>

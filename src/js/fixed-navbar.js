@@ -8,7 +8,7 @@ const headerBg = document.querySelector('.header-bg');
 
 window.addEventListener('scroll', () => {
   
-  if(window.scrollY >= 35){
+  if(window.scrollY > 35){
     plusBtn.style.display = 'none';
     mainLogo.style.width = '80px';
     mainLogo.style.marginLeft = '0';

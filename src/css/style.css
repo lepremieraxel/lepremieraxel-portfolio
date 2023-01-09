@@ -248,7 +248,7 @@ header {
 .logo-3d {
   position: absolute;
   z-index: -1;
-  opacity: .4;
+  opacity: 0.4;
   width: 100%;
   display: flex;
   align-items: center;
@@ -367,8 +367,24 @@ section p {
 }
 
 /* section contact */
-#contact .social-links {
+#contact .section-line{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 50px;
+}
+#contact .section-line > span:not(.social-links){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+#contact .social-links{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 100%;
@@ -382,13 +398,16 @@ section p {
 .plus-social-container a:hover {
   color: var(--primary);
 }
-#contact p {
-  text-align: center;
-}
 #contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+#contact form span {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   gap: 20px;
 }
@@ -440,9 +459,9 @@ section p {
   right: -15px;
   z-index: 6;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-#contact form button:hover{
+#contact form button:hover {
   background-position: right;
 }
 #contact form p {

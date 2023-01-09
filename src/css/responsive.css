@@ -1,15 +1,18 @@
-@media screen and (min-width:1000px) {
-  body{
+@media screen and (min-width: 1000px) {
+  body {
     padding: 0 100px;
   }
-  header{
+  header {
     flex-direction: row-reverse;
     gap: 10px;
   }
-  .burger{
+  .main-logo svg{
+    margin-left: 0;
+  }
+  .burger {
     display: none;
   }
-  .burger-container{
+  .burger-container {
     transform: translateX(0) !important;
     z-index: 100 !important;
     opacity: 1 !important;
@@ -21,35 +24,58 @@
     position: static;
     margin: 0;
   }
-  .burger-container a{
+  .burger-container a {
     font-size: 1.5rem;
   }
-  .plus-social{
+  .plus-social {
     display: none !important;
   }
-  .main-title h1{
+  .plus-social-container {
+    display: none !important;
+  }
+  .main-title h1 {
     font-size: 5rem;
   }
-  .main-title h2{
+  .main-title h2 {
     font-size: 4rem;
   }
-  .logo-3d img{
+  .logo-3d img {
     width: 40%;
     max-width: 40%;
   }
-  #about .cta-line{
+  #about .cta-line {
     justify-content: flex-start;
     gap: 20px;
   }
-  footer{
+  #contact .section-line {
+    flex-direction: row;
+    gap: 100px;
+  }
+  #contact .social-links {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    gap: 50px;
+  }
+  #contact .social-links a {
+    font-size: 5rem;
+  }
+  #contact form span {
+    flex-direction: row;
+  }
+  footer {
     width: calc(100% + 200px);
+    padding: 50px 0;
+  }
+  footer p{
+    font-size: 1.6rem;
   }
 }
-@media screen and (min-width:1250px) {
-  body{
+@media screen and (min-width: 1250px) {
+  body {
     padding: 0 250px;
   }
-  footer{
+  footer {
     width: calc(100% + 500px);
   }
 }
