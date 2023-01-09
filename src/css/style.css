@@ -72,7 +72,6 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  transform: translateX(16px);
 }
 
 /* scrollbar */
@@ -247,6 +246,9 @@ header {
 
 /* logo-3d */
 .logo-3d {
+  position: absolute;
+  z-index: -1;
+  opacity: .4;
   width: 100%;
   display: flex;
   align-items: center;
@@ -255,7 +257,6 @@ header {
 .logo-3d img {
   width: auto;
   max-width: 500px;
-  max-height: 200px;
 }
 
 /* call to action -> contact me */
@@ -425,6 +426,8 @@ section p {
 }
 #contact form button {
   background: linear-gradient(to left, var(--primary), var(--secondary));
+  background-size: 120%;
+  background-position: left;
   font-family: "BC Alphapipe Regular";
   color: var(--clear);
   font-size: 1.5rem;
@@ -437,6 +440,10 @@ section p {
   right: -15px;
   z-index: 6;
   cursor: pointer;
+  transition: all .3s ease;
+}
+#contact form button:hover{
+  background-position: right;
 }
 #contact form p {
   font-size: 1.3rem;

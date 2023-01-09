@@ -57,14 +57,14 @@
     <div class="logo-3d">
       <img src="/assets/img/logo/logo3d.png" alt="3D version of lepremieraxel's logo">
     </div>
-    <a href="" class="cta">contact me</a>
+    <a href="/#contact" class="cta">contact me</a>
   </main>
   <section id="about">
     <h3>@about</h3>
     <p>hi, i'm axel, a junior web developer. i'm 19, i'm from france and i actually do a web and multimedia degree.</p>
     <span class="cta-line">
       <a href="" class="cta cta-secondary cta-small">my&nbsp;resume</a>
-      <a href="" class="cta cta-small">hire&nbsp;me</a>
+      <a href="/#contact" class="cta cta-small">hire&nbsp;me</a>
     </span>
   </section>
   <section id="portfolio">

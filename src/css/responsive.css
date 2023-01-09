@@ -27,6 +27,16 @@
   .plus-social{
     display: none !important;
   }
+  .main-title h1{
+    font-size: 5rem;
+  }
+  .main-title h2{
+    font-size: 4rem;
+  }
+  .logo-3d img{
+    width: 40%;
+    max-width: 40%;
+  }
   #about .cta-line{
     justify-content: flex-start;
     gap: 20px;
