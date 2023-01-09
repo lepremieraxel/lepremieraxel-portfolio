@@ -108,7 +108,7 @@
           case 'true':
       ?>
             <div class="form-alert form-success">
-              <p>successfully sent!</p>
+              <p>sent successfully!</p>
             </div>
           <?php
             break;
