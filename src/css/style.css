@@ -403,6 +403,20 @@ section p{
   z-index: 6;
   cursor: pointer;
 }
+#contact form p{
+  font-size: 1.3rem;
+}
+#contact .form-alert{
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: 10px;
+}
+#contact .form-success{
+  background-color: var(--footer-bg);
+}
+#contact .form-error{
+  background-color: var(--primary);
+}
 
 /* footer */
 footer{

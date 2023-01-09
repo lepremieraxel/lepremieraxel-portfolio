@@ -2,7 +2,7 @@
 
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
 
-  header('Location: /');
+  header('Location: /?send=true#contact');
 
   $name = $_POST['name'];
   $email = $_POST['email'];
@@ -38,4 +38,4 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
   $headers .= "Reply-To: " . $email . "\r\n";
 
   mail($to, $object, $content, $headers);
-} else header('Location: /');
+} else header('Location: /?send=false#contact');
