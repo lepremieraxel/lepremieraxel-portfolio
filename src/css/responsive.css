@@ -63,6 +63,19 @@
   #contact form span {
     flex-direction: row;
   }
+  #page{
+    gap: 80px;
+    padding: 20px 0 100px;
+  }
+  #page div{
+    flex-direction: row;
+  }
+  #page span{
+    width: 50%;
+  }
+  #page span:first-child p{
+    text-align: start;
+  }
   footer {
     width: calc(100% + 200px);
     padding: 50px 0;

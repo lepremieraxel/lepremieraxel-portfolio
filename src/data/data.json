@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "title":"first project",
+    "subtitle": "lepremieraxel • website • 2023",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "mainImg": "img2.png",
+    "imgTab": [
+      "img2.png",
+      "img2.png",
+      "img2.png"
+    ]
+  },
+  {
+    "id": 1,
+    "title":"second project",
+    "subtitle": "lepremieraxel • website • 2023",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "mainImg": "img1.png",
+    "imgTab": [
+      "img1.png",
+      "img1.png",
+      "img1.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title":"third project",
+    "subtitle": "lepremieraxel • website • 2023",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "mainImg": "img2.png",
+    "imgTab": [
+      "img2.png",
+      "img2.png",
+      "img2.png"
+    ]
+  }
+]

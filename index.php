@@ -16,6 +16,7 @@
 </head>
 
 <body id="home">
+  <?php include("src/php/print-data-home.php"); ?>
   <div class="scrollbar"></div>
   <header>
     <div class="plus-social">
@@ -23,14 +24,14 @@
       <span></span>
     </div>
     <nav class="burger-container inactive">
-      <a href="#home">@home</a>
-      <a href="#about">@about</a>
-      <a href="#portfolio">@portfolio</a>
-      <a href="#contact">@contact</a>
+      <a href="/#home">@home</a>
+      <a href="/#about">@about</a>
+      <a href="/#portfolio">@portfolio</a>
+      <a href="/#contact">@contact</a>
     </nav>
     <div class="plus-social-container inactive">
       <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>
-      <a href="#contact"><i class="fa-regular fa-message"></i> contact me</a>
+      <a href="/#contact"><i class="fa-regular fa-message"></i> contact me</a>
       <span class="plus-social-icons">
         <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -70,26 +71,7 @@
   <section id="portfolio">
     <h3>@portfolio</h3>
     <div class="galery">
-      <a href="" class="card">
-        <p>élément 1</p>
-        <img src="/assets/img/portfolio/img1.png" alt="">
-      </a>
-      <a href="" class="card">
-        <p>élément 1</p>
-        <img src="/assets/img/portfolio/img1.png" alt="">
-      </a>
-      <a href="" class="card">
-        <p>élément 1</p>
-        <img src="/assets/img/portfolio/img1.png" alt="">
-      </a>
-      <a href="" class="card">
-        <p>élément 1</p>
-        <img src="/assets/img/portfolio/img1.png" alt="">
-      </a>
-      <a href="" class="card">
-        <p>élément 1</p>
-        <img src="/assets/img/portfolio/img1.png" alt="">
-      </a>
+      <?php printHome(); ?>
     </div>
   </section>
   <section id="contact">
