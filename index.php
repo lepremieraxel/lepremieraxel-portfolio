@@ -13,6 +13,8 @@
   <script src="https://kit.fontawesome.com/e0b8ba43a6.js" crossorigin="anonymous"></script>
   <!-- TITLE -->
   <title>home • lepremieraxel's portfolio</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="/assets/img/logo/logo.svg">
 </head>
 
 <body id="home">

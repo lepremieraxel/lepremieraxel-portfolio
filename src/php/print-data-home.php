@@ -6,13 +6,14 @@ $jsonFileContent = file_get_contents($jsonFile);
 
 $jsonContentDecode = json_decode($jsonFileContent, true);
 
-function printHome(){
+function printHome()
+{
   global $jsonContentDecode;
   foreach ($jsonContentDecode as $project) {
-    echo '<a href="/page/'.$project['title'].'" class="card">
-    <p>'.$project['title'].'</p>
-    <img src="/assets/img/portfolio/'.$project['mainImg'].'" alt="">
+    $title = str_replace('-', ' ', $project['title']);
+    echo '<a href="/page/' . $project['title'] . '" class="card">
+    <p>' . $title . '</p>
+    <img src="/assets/img/portfolio/' . $project['mainImg'] . '" alt="">
   </a>';
   }
 }
-

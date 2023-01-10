@@ -326,7 +326,8 @@ section p {
 }
 
 /* section portfolio */
-#portfolio .galery, #page .galery {
+#portfolio .galery,
+#page .galery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
@@ -368,7 +369,7 @@ section p {
 }
 
 /* section contact */
-#contact .section-line{
+#contact .section-line {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,14 +377,14 @@ section p {
   width: 100%;
   gap: 50px;
 }
-#contact .section-line > span:not(.social-links){
+#contact .section-line > span:not(.social-links) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 35px;
 }
-#contact .social-links{
+#contact .social-links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -481,28 +482,28 @@ section p {
 }
 
 /* section page */
-#page{
+#page {
   padding: 50px 0 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
-#page img{
+#page img {
   width: 100%;
   border-radius: var(--border-radius);
 }
-#page div{
+#page div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
 }
-#page span:first-child p{
+#page span:first-child p {
   font-size: 1.4rem;
   text-align: center;
 }
-#page p{
+#page p {
   padding: 10px;
 }
 

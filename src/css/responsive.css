@@ -6,7 +6,7 @@
     flex-direction: row-reverse;
     gap: 10px;
   }
-  .main-logo svg{
+  .main-logo svg {
     margin-left: 0;
   }
   .burger {
@@ -63,24 +63,24 @@
   #contact form span {
     flex-direction: row;
   }
-  #page{
+  #page {
     gap: 80px;
     padding: 20px 0 100px;
   }
-  #page div{
+  #page div {
     flex-direction: row;
   }
-  #page span{
+  #page span {
     width: 50%;
   }
-  #page span:first-child p{
+  #page span:first-child p {
     text-align: start;
   }
   footer {
     width: calc(100% + 200px);
     padding: 50px 0;
   }
-  footer p{
+  footer p {
     font-size: 1.6rem;
   }
 }

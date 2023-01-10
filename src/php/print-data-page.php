@@ -6,27 +6,28 @@ $jsonFileContent = file_get_contents($jsonFile);
 
 $jsonContentDecode = json_decode($jsonFileContent, true);
 
-function printPage(){
+function printPage()
+{
   global $jsonContentDecode;
   $getTitle = $_GET['title'];
   foreach ($jsonContentDecode as $project) {
-    if($project['title'] == $getTitle){
-      echo '<h3>'.$project['title'].'</h3>
+    if ($project['title'] == $getTitle) {
+      $title = str_replace('-', ' ', $project['title']);
+      echo '<h3>' . $title . '</h3>
       <div>
         <span>
-          <img src="/assets/img/portfolio/'.$project['mainImg'].'" alt="" />
-          <p>'.$project['subtitle'].'</p>
+          <img src="/assets/img/portfolio/' . $project['mainImg'] . '" alt="" />
+          <p>' . $project['subtitle'] . '</p>
         </span>
         <span>
-          <p>'.$project['text'].'</p>
+          <p>' . $project['text'] . '</p>
         </span>
       </div>
       <div class="galery">';
       foreach ($project['imgTab'] as $img) {
-        echo '<img src="/assets/img/portfolio/'.$img.'" alt="" class="card" />';
+        echo '<img src="/assets/img/portfolio/' . $img . '" alt="" class="card" />';
       }
       echo '</div>';
     }
   }
 }
-
