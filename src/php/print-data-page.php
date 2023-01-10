@@ -8,9 +8,9 @@ $jsonContentDecode = json_decode($jsonFileContent, true);
 
 function printPage(){
   global $jsonContentDecode;
-  $getId = $_GET['id'];
+  $getTitle = $_GET['title'];
   foreach ($jsonContentDecode as $project) {
-    if($project['id'] == $getId){
+    if($project['title'] == $getTitle){
       echo '<h3>'.$project['title'].'</h3>
       <div>
         <span>
