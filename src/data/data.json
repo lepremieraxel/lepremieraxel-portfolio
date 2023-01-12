@@ -1,20 +1,22 @@
 [
   {
     "id": 0,
-    "title":"first-project",
-    "subtitle": "lepremieraxel • website • 2023",
+    "title":"my-portfolio",
+    "subtitle": "lepremieraxel • design and development • 2023",
+    "link": "https://axelmarcial.com",
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-    "mainImg": "img2.png",
+    "mainImg": "my-portfolio.png",
     "imgTab": [
-      "img2.png",
-      "img2.png",
-      "img2.png"
+      "my-portfolio.png",
+      "my-portfolio.png",
+      "my-portfolio.png"
     ]
   },
   {
     "id": 1,
     "title":"second-project",
     "subtitle": "lepremieraxel • website • 2023",
+    "link": "",
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
     "mainImg": "img1.png",
     "imgTab": [
@@ -27,6 +29,7 @@
     "id": 2,
     "title":"third-project",
     "subtitle": "lepremieraxel • website • 2023",
+    "link": "",
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
     "mainImg": "img2.png",
     "imgTab": [

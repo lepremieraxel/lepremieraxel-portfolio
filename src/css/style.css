@@ -506,6 +506,18 @@ section p {
 #page p {
   padding: 10px;
 }
+#page a{
+  color: var(--clear);
+  padding-left: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+#page a i{
+  font-size: 1rem;
+}
+#page a:hover{
+  color: var(--primary);
+}
 
 /* footer */
 footer {

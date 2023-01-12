@@ -18,6 +18,7 @@ function printPage()
         <span>
           <img src="/assets/img/portfolio/' . $project['mainImg'] . '" alt="" />
           <p>' . $project['subtitle'] . '</p>
+          <a href="'.$project['link'].'" target="_blank">link&nbsp;to&nbsp;work&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </span>
         <span>
           <p>' . $project['text'] . '</p>
