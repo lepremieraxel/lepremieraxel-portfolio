@@ -1,15 +1,16 @@
 <?php
 
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']) && isset($_POST['reason'])) {
 
   header('Location: /?send=true#contact');
 
   $name = $_POST['name'];
+  $reason = $_POST['reason'];
   $email = $_POST['email'];
   $message = $_POST['message'];
 
   $to = 'hello@axelmarcial.com';
-  $object = "Nouveau message de " . $name . ".";
+  $object = "[" . $reason . "] - " . $name . ".";
   $content = "
   <html>
     <head>

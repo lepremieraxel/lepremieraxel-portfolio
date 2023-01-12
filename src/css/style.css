@@ -427,7 +427,8 @@ section p {
   top: -3px;
 }
 #contact form input,
-#contact form textarea {
+#contact form textarea,
+#contact form select {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -441,6 +442,15 @@ section p {
   top: -7px;
   color: var(--clear);
   outline: none;
+}
+#contact form select{
+  background-color: var(--main-bg);
+  width: 98%;
+  left: 2px;
+  user-select: none;
+}
+#contact form select option:focus{
+  background-color: var(--main-bg);
 }
 #contact form textarea {
   min-height: 150px;

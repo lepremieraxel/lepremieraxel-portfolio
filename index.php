@@ -67,7 +67,7 @@
     <p>hi, i'm axel, a junior web developer. i'm 19, i'm from france and i actually do a web and multimedia degree.</p>
     <span class="cta-line">
       <a href="" class="cta cta-secondary cta-small">my&nbsp;resume</a>
-      <a href="/#contact" class="cta cta-small">hire&nbsp;me</a>
+      <a href="/#contact" id="hire-me-btn" class="cta cta-small">hire&nbsp;me</a>
     </span>
   </section>
   <section id="portfolio">
@@ -111,16 +111,30 @@
           <span>
             <fieldset>
               <legend>&nbsp;name&nbsp;</legend>
-              <input type="text" name="name" id="name" placeholder="write your name" required>
+              <input type="text" name="name" id="name" placeholder="write your name*" required>
             </fieldset>
             <fieldset>
-              <legend>&nbsp;email&nbsp;</legend>
-              <input type="email" name="email" id="email" placeholder="write your email" required>
+              <legend>&nbsp;reason&nbsp;</legend>
+              <div class="custom-select">
+                <select name="reason" id="reason" required>
+                  <option value="">choose a reason</option>
+                  <option value="message">message</option>
+                  <option value="question">question</option>
+                  <option id="hire-option" value="offre-emploi">hiring offer</option>
+                  <option value="feedback">experience feedback</option>
+                  <option value="etudiant-stage">student / internship</option>
+                  <option value="projet">interesting project idea</option>
+                </select>
+              </div>
             </fieldset>
           </span>
           <fieldset>
+            <legend>&nbsp;email&nbsp;</legend>
+            <input type="email" name="email" id="email" placeholder="write your email*" required>
+          </fieldset>
+          <fieldset>
             <legend>&nbsp;message&nbsp;</legend>
-            <textarea name="message" id="message" placeholder="write your message" required></textarea>
+            <textarea name="message" id="message" placeholder="write your message*" required></textarea>
             <button type="submit">send</button>
           </fieldset>
         </form>
@@ -137,6 +151,7 @@
   <script src="/src/js/fixed-navbar.js"></script>
   <script src="/src/js/resize-textarea.js"></script>
   <script src="/src/js/scrollbar.js"></script>
+  <script src="/src/js/hire-me-btn.js"></script>
 </body>
 
 </html>

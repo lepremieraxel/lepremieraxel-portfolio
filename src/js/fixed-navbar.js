@@ -6,7 +6,8 @@ const burgerBtn = navbar.children[4];
 const headerBg = document.querySelector(".header-bg");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 35) {
+  // console.log(window.scrollY);
+  if (window.scrollY > 1) {
     plusBtn.style.display = "none";
     mainLogo.style.width = "80px";
     mainLogo.style.marginLeft = "0";
