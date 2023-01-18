@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* scrollbar */
@@ -255,8 +256,8 @@ header {
   justify-content: center;
 }
 .logo-3d img {
-  width: auto;
-  max-width: 500px;
+  width: 100%;
+  max-width: 450px;
 }
 
 /* call to action -> contact me */
@@ -329,7 +330,7 @@ section p {
 #portfolio .galery,
 #page .galery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 #portfolio .card {
@@ -362,7 +363,7 @@ section p {
   transition: all 0.3s ease;
 }
 #portfolio .card:hover p {
-  bottom: 5px;
+  bottom: 10px;
 }
 #portfolio .card:hover::after {
   background-color: rgba(0, 0, 0, 0.6);
@@ -543,5 +544,6 @@ footer {
 }
 footer p {
   font-size: 1.3rem;
+  text-align: center;
   color: var(--clear);
 }
