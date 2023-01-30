@@ -7,28 +7,7 @@ const span1 = burger.children[0];
 const span2 = burger.children[1];
 const span3 = burger.children[2];
 
-const body = document.body;
-
 const burgerLinks = document.querySelectorAll(".burger-container a");
-
-burgerLinks.forEach((burgerLink) => {
-  burgerLink.addEventListener("click", () => {
-    burgerContainer.classList.toggle("inactive");
-    if (burgerContainer.classList.contains("inactive")) {
-      burgerContainer.style.transform = "translateX(100%)";
-      span1.style.transform = "translate(0) rotate(0)";
-      span2.style.transform = "translate(0) rotate(0)";
-      span3.style.transform = "translate(0) rotate(0)";
-      body.style.overflow = "unset";
-    } else {
-      burgerContainer.style.transform = "translateX(0)";
-      span1.style.transform = "translate(0) rotate(10deg)";
-      span2.style.transform = "translate(3px, 0) rotate(-30deg)";
-      span3.style.transform = "translate(-5px, -16px) rotate(45deg)";
-      body.style.overflow = "hidden";
-    }
-  });
-});
 
 burger.addEventListener("click", () => {
   plusContainer.classList.add("inactive");
@@ -47,4 +26,22 @@ burger.addEventListener("click", () => {
     span3.style.transform = "translate(-5px, -16px) rotate(45deg)";
     body.style.overflow = "hidden";
   }
+});
+burgerLinks.forEach((burgerLink) => {
+  burgerLink.addEventListener("click", () => {
+    burgerContainer.classList.toggle("inactive");
+    if (burgerContainer.classList.contains("inactive")) {
+      burgerContainer.style.transform = "translateX(100%)";
+      span1.style.transform = "translate(0) rotate(0)";
+      span2.style.transform = "translate(0) rotate(0)";
+      span3.style.transform = "translate(0) rotate(0)";
+      body.style.overflow = "unset";
+    } else {
+      burgerContainer.style.transform = "translateX(0)";
+      span1.style.transform = "translate(0) rotate(10deg)";
+      span2.style.transform = "translate(3px, 0) rotate(-30deg)";
+      span3.style.transform = "translate(-5px, -16px) rotate(45deg)";
+      body.style.overflow = "hidden";
+    }
+  });
 });

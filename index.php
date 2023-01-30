@@ -30,6 +30,10 @@
       <a href="/#about">@about</a>
       <a href="/#portfolio">@portfolio</a>
       <a href="/#contact">@contact</a>
+      <label class="toggle-control">
+        <input type="checkbox">
+        <span class="control"></span>
+      </label>
     </nav>
     <div class="plus-social-container inactive">
       <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>

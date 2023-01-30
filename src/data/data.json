@@ -4,29 +4,36 @@
     "title":"my-portfolio",
     "subtitle": "lepremieraxel • design and development • 2023",
     "link": "https://axelmarcial.com",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "text": "this is my portfolio, i designed and developed it myself. i used html, css, js and php.",
     "mainImg": "my-portfolio-1.png",
     "imgTab": [
+      "my-portfolio-2.png",
+      "my-portfolio-3.png",
+      "my-portfolio-4.png",
+      "my-portfolio-5.png",
+      "my-portfolio-6.png"
     ]
   },
   {
     "id": 1,
-    "title":"second-project",
-    "subtitle": "lepremieraxel • website • 2023",
-    "link": "",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-    "mainImg": "img1.png",
+    "title":"neonprod-portfolio",
+    "subtitle": "lepremieraxel, racoon, spoon and neon prod.uction • design and development • 2022",
+    "link": "https://neonprod.axelmarcial.com",
+    "text": "this site is the portfolio of my friend jade from neon prod.uction. it's the very first site i've done for someone. i did it for a class assignment with 3 friends including jade. we got a 20/20. in addition to the visuals you can see, the site also contains an admin page to manage the content of the portfolio.",
+    "mainImg": "neonprod-1.png",
     "imgTab": [
-      "img1.png",
-      "img1.png",
-      "img1.png"
+      "neonprod-2.png",
+      "neonprod-3.jpg",
+      "neonprod-4.png",
+      "neonprod-5.png",
+      "neonprod-6.png"
     ]
   },
   {
     "id": 2,
-    "title":"third-project",
-    "subtitle": "lepremieraxel • website • 2023",
-    "link": "",
+    "title":"festival-bd-pyrénées",
+    "subtitle": "lepremieraxel • design and development • 2023",
+    "link": "https://festivalbdpyrenees.fr",
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
     "mainImg": "img2.png",
     "imgTab": [
