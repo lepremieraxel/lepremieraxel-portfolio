@@ -6,6 +6,17 @@ $jsonFileContent = file_get_contents($jsonFile);
 
 $jsonContentDecode = json_decode($jsonFileContent, true);
 
+function pageTitle(){
+  global $jsonContentDecode;
+  $getTitle = $_GET['title'];
+  foreach ($jsonContentDecode as $project) {
+    if ($project['title'] == $getTitle) {
+      $title = str_replace('-', ' ', $project['title']);
+      echo $title;
+    }
+  }
+}
+
 function printPage()
 {
   global $jsonContentDecode;
@@ -18,7 +29,7 @@ function printPage()
         <span>
           <img src="/assets/img/portfolio/' . $project['mainImg'] . '" alt="" />
           <p>' . $project['subtitle'] . '</p>
-          <a href="'.$project['link'].'" target="_blank">link&nbsp;to&nbsp;work&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="'.$project['link'].'" target="_blank">lien&nbsp;vers&nbsp;le&nbsp;travail&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </span>
         <span>
           <p>' . $project['text'] . '</p>

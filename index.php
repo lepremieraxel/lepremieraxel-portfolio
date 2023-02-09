@@ -12,7 +12,7 @@
   <!-- ICONS -->
   <script src="https://kit.fontawesome.com/e0b8ba43a6.js" crossorigin="anonymous"></script>
   <!-- TITLE -->
-  <title>home • lepremieraxel's portfolio</title>
+  <title>accueil • lepremieraxel portfolio</title>
   <!-- FAVICON -->
   <link rel="shortcut icon" href="/assets/img/logo/logo.svg">
 </head>
@@ -26,18 +26,18 @@
       <span></span>
     </div>
     <nav class="burger-container inactive">
-      <a href="/#home">@home</a>
-      <a href="/#about">@about</a>
+      <a href="/#home">@accueil</a>
+      <a href="/#about">@a-propos</a>
       <a href="/#portfolio">@portfolio</a>
       <a href="/#contact">@contact</a>
-      <label class="toggle-control">
+      <!-- <label class="toggle-control">
         <input type="checkbox">
         <span class="control"></span>
-      </label>
+      </label> -->
     </nav>
     <div class="plus-social-container inactive">
-      <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>
-      <a href="/#contact"><i class="fa-regular fa-message"></i> contact me</a>
+      <a href=""><i class="fa-regular fa-circle-down"></i> téléchargez mon CV</a>
+      <a href="/#contact"><i class="fa-regular fa-message"></i> contactez moi</a>
       <span class="plus-social-icons">
         <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -59,19 +59,19 @@
   <main class="hero">
     <div class="main-title">
       <h1>lepremieraxel</h1>
-      <h2>web developer</h2>
+      <h2>développeur web</h2>
     </div>
     <div class="logo-3d">
       <img src="/assets/img/logo/logo3d.png" alt="3D version of lepremieraxel's logo">
     </div>
-    <a href="/#contact" class="cta">contact me</a>
+    <a href="/#contact" class="cta">contactez moi</a>
   </main>
   <section id="about">
-    <h3>@about</h3>
-    <p>hi, i'm axel, a junior web developer. i'm 19, i'm from france and i actually do a web and multimedia degree.</p>
+    <h3>@a-propos</h3>
+    <p>Salut je suis Axel.</p>
     <span class="cta-line">
-      <a href="" class="cta cta-secondary cta-small">my&nbsp;resume</a>
-      <a href="/#contact" id="hire-me-btn" class="cta cta-small">hire&nbsp;me</a>
+      <a href="" class="cta cta-secondary cta-small">mon&nbsp;cv</a>
+      <a href="/#contact" id="hire-me-btn" class="cta cta-small">embauchez&nbsp;moi</a>
     </span>
   </section>
   <section id="portfolio">
@@ -89,7 +89,7 @@
         <a href="mailto:hello@axelmarcial.com"><i class="fa-solid fa-at"></i></a>
       </span>
       <span>
-        <p>for a message, a question or a job, send me a message and i will answer it.</p>
+        <p>pour un message, une question ou une offre d'emploi, envoyez moi un message et j'y répondrais.</p>
         <form action="/src/php/send-mail.php" method="post">
           <?php
           if (isset($_GET['send'])) {
@@ -98,14 +98,14 @@
               case 'true':
           ?>
                 <div class="form-alert form-success">
-                  <p>sent successfully!</p>
+                  <p>envoyé avec succès</p>
                 </div>
               <?php
                 break;
               case 'false':
               ?>
                 <div class="form-alert form-error">
-                  <p>an error has occured. retry.</p>
+                  <p>une erreur s'est produite. réessayez.</p>
                 </div>
           <?php
                 break;
@@ -114,32 +114,32 @@
           ?>
           <span>
             <fieldset>
-              <legend>&nbsp;name&nbsp;</legend>
-              <input type="text" name="name" id="name" placeholder="write your name*" required>
+              <legend>&nbsp;nom&nbsp;</legend>
+              <input type="text" name="name" id="name" placeholder="écrivez votre nom*" required>
             </fieldset>
             <fieldset>
-              <legend>&nbsp;reason&nbsp;</legend>
+              <legend>&nbsp;raison&nbsp;</legend>
               <div class="custom-select">
                 <select name="reason" id="reason" required>
-                  <option value="">choose a reason</option>
+                  <option value="">choisissez une raison</option>
                   <option value="message">message</option>
                   <option value="question">question</option>
-                  <option id="hire-option" value="offre-emploi">hiring offer</option>
-                  <option value="feedback">experience feedback</option>
-                  <option value="etudiant-stage">student / internship</option>
-                  <option value="projet">interesting project idea</option>
+                  <option id="hire-option" value="offre-emploi">offre d'emploi</option>
+                  <option value="feedback">retour d'experience</option>
+                  <option value="etudiant-stage">étudiant / stage</option>
+                  <option value="projet">idée de projet intéréssant</option>
                 </select>
               </div>
             </fieldset>
           </span>
           <fieldset>
             <legend>&nbsp;email&nbsp;</legend>
-            <input type="email" name="email" id="email" placeholder="write your email*" required>
+            <input type="email" name="email" id="email" placeholder="écrivez votre email*" required>
           </fieldset>
           <fieldset>
             <legend>&nbsp;message&nbsp;</legend>
-            <textarea name="message" id="message" placeholder="write your message*" required></textarea>
-            <button type="submit">send</button>
+            <textarea name="message" id="message" placeholder="écrivez votre message*" required></textarea>
+            <button type="submit">envoyer</button>
           </fieldset>
         </form>
       </span>
@@ -147,7 +147,7 @@
   </section>
   <footer>
     <p>&copy; lepremieraxel • axel marcial • 2023</p>
-    <p>designed and developed by lepremieraxel</p>
+    <p>designé et développé par lepremieraxel</p>
   </footer>
   <!-- SCRIPT JS -->
   <script src="/src/js/plus-social.js"></script>

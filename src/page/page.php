@@ -12,13 +12,13 @@
   <!-- ICONS -->
   <script src="https://kit.fontawesome.com/e0b8ba43a6.js" crossorigin="anonymous"></script>
   <!-- TITLE -->
-  <title>home • lepremieraxel's portfolio</title>
+  <?php include("../php/print-data-page.php"); ?>
+  <title><?php pageTitle(); ?> • lepremieraxel portfolio</title>
   <!-- FAVICON -->
   <link rel="shortcut icon" href="/assets/img/logo/logo.svg">
 </head>
 
 <body id="home">
-  <?php include("../php/print-data-page.php"); ?>
   <div class="scrollbar"></div>
   <header>
     <div class="plus-social">
@@ -26,14 +26,14 @@
       <span></span>
     </div>
     <nav class="burger-container inactive">
-      <a href="/#home">@home</a>
-      <a href="/#about">@about</a>
+      <a href="/#home">@accueil</a>
+      <a href="/#about">@a-propos</a>
       <a href="/#portfolio">@portfolio</a>
       <a href="/#contact">@contact</a>
     </nav>
     <div class="plus-social-container inactive">
-      <a href=""><i class="fa-regular fa-circle-down"></i> download my resume</a>
-      <a href="/#contact"><i class="fa-regular fa-message"></i> contact me</a>
+      <a href=""><i class="fa-regular fa-circle-down"></i> téléchargez mon cv</a>
+      <a href="/#contact"><i class="fa-regular fa-message"></i> contactez moi</a>
       <span class="plus-social-icons">
         <a href="https://www.instagram.com/lepremieraxel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://github.com/lepremieraxel" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -57,7 +57,7 @@
   </section>
   <footer>
     <p>&copy; lepremieraxel • axel marcial • 2023</p>
-    <p>designed and developed by lepremieraxel</p>
+    <p>designé et développé par lepremieraxel</p>
   </footer>
   <!-- SCRIPT JS -->
   <script src="/src/js/plus-social.js"></script>
