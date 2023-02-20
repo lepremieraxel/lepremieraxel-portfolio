@@ -285,6 +285,7 @@ header {
   flex-direction: column;
   align-items: center;
   color: var(--clear);
+  z-index: 5;
 }
 .main-title h1 {
   font-size: 3rem;
@@ -294,18 +295,26 @@ header {
 }
 
 /* logo-3d */
-.logo-3d {
+.webgl{
   position: absolute;
-  z-index: -1;
-  opacity: 0.4;
-  width: 100%;
+  top: 150px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 180px);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
-.logo-3d img {
-  width: 100%;
-  max-width: 450px;
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg);
+  opacity: .5;
+  z-index: 3;
 }
 
 /* call to action -> contact me */
@@ -324,6 +333,7 @@ header {
   background-size: 120%;
   background-position: left;
   transition: all 0.3s ease;
+  z-index: 5;
 }
 .cta-small {
   font-size: 1.5rem;

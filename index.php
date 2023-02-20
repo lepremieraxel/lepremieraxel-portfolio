@@ -55,14 +55,13 @@
       <span></span>
     </div>
   </header>
+  <div class="overlay"></div>
+  <canvas class="webgl"></canvas>
   <div class="header-bg"></div>
   <main class="hero">
     <div class="main-title">
       <h1>lepremieraxel</h1>
       <h2>développeur web</h2>
-    </div>
-    <div class="logo-3d">
-      <img src="/assets/img/logo/logo3d.png" alt="3D version of lepremieraxel's logo">
     </div>
     <a href="/#contact" class="cta">contactez moi</a>
   </main>
@@ -156,6 +155,14 @@
   <script src="/src/js/resize-textarea.js"></script>
   <script src="/src/js/scrollbar.js"></script>
   <script src="/src/js/hire-me-btn.js"></script>
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "./src/js/three/build/three.module.js"
+        }
+      }
+    </script>
+  <script type="module" src="./src/js/logo3d.js"></script>
 </body>
 
 </html>
